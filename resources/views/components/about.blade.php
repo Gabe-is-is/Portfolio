@@ -12,20 +12,20 @@
         <div class="about-about_me-wrapper-column-wrapper">
             <div class="about-about_me-wrapper-column-wrapper-column_2">
                 <h3>Gabriely Gomes</h3>
-                <p></p>
+                <p>{{ $about->about_me }}</p>
             </div>
             <div class="about-about_me-wrapper-column-wrapper-column_2-wrapping">
                 <div class="about-about_me-wrapper-column-wrapper-column_2-wrapping-info_card">
                     <h4>Localização</h4>
-                    <p></p>
+                    <p>{{ $about->location }}</p>
                 </div>
                 <div class="about-about_me-wrapper-column-wrapper-column_2-wrapping-info_card">
                     <h4>Experiência</h4>
-                    <p></p>
+                    <p>{{ $about->experience }}</p>
                 </div>
                 <div class="about-about_me-wrapper-column-wrapper-column_2-wrapping-info_card">
                     <h4>Educação</h4>
-                    <p></p>
+                    <p>{{ $about->education }}</p>
                 </div>
             </div>
         </div>

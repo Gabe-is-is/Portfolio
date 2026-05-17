@@ -210,7 +210,7 @@
                     </div>
                     <div>
                         <ul>
-                             @foreach ($testeDeComando as $badge)
+                            @foreach ($testeDeComando as $badge)
                                 <li class="disponibilidade-li">{{ $badge}}</li>
                             @endforeach
                         </ul>

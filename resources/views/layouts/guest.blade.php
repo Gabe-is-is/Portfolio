@@ -1,3 +1,9 @@
+@php
+    use App\Models\Contactinfo;
+
+    $contactInfo = Contactinfo::findOrFail(1);
+@endphp
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +22,7 @@
     <x-component.header>
     </x-component.header>
     {{ $slot }}
-    <x-component.footer>
+    <x-component.footer :contactInfo="$contactInfo">
     </x-component.footer>
 </body>
 

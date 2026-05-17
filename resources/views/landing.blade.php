@@ -1,15 +1,15 @@
 <x-layouts::guest>
-    <x-component.introduction>
-    </x-component.introduction>
-    <x-component.about>
-    </x-component.about>
-    <x-component.projects>
-    </x-component.projects>
-    <x-component.habilities>
-    </x-component.habilities>
-    <x-component.contract-me :disponibility="$disponibility">
-    </x-component.contract-me>
-    <x-component.contact-me>
-    </x-component.contact-me>
+    <x-introduction>
+    </x-introduction>
+    <x-about :about="$about">
+    </x-about>
+    <x-projects :projects="$projects">
+    </x-projects>
+    <x-skill :skills="$skills">
+    </x-skill>
+    <x-contract-me :disponibility="$disponibility">
+    </x-contract-me>
+    <x-contact-me :contactInfo="$contactInfo">
+    </x-contact-me>
 
 </x-layouts::guest>

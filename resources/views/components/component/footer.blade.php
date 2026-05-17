@@ -20,18 +20,18 @@
             <div class="footer-container-grid-third_grid">
                 <h4>Serviços</h4>
                 <ul>
-                    <li><a href="#">Desenvolvimento Frontend</a></li>
-                    <li><a href="#">Otimização de Performance</a></li>
-                    <li><a href="#">Consultoria Web</a></li>
-                    <li><a href="#">Desenvolvimento Responsivo</a></li>
+                    <li><a>Desenvolvimento Frontend</a></li>
+                    <li><a>Otimização de Performance</a></li>
+                    <li><a>Consultoria Web</a></li>
+                    <li><a>Desenvolvimento Responsivo</a></li>
                 </ul>
             </div>
             <div class="footer-container-grid-fourth_grid">
                 <h4>Contato</h4>
                 <ul>
-                    <li><a href="#">Leme do Prado, MG - Brasil</a></li>
-                    <li><a href="#">contato@gabrielygomes.com</a></li>
-                    <li><a href="#">(33) 99999-9999</a></li>
+                    <li><a href="#">{{ $contactInfo->location }}</a></li>
+                    <li><a href="#">{{ $contactInfo->email }}</a></li>
+                    <li><a href="#">{{ $contactInfo->phone }}</a></li>
                 </ul>
                 <div class="footer-container-grid-fourth_grid-svg">
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"

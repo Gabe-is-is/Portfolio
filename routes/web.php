@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ContactMessagesController;
 use App\Http\Controllers\DisponibilityController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\SkillsController;
 use App\Models\About;
@@ -57,4 +58,6 @@ Route::prefix('/admin')->group(function () {
     Route::put('/projects/{id}', [ProjectsController::class, 'update'])->name('admin.projects.update');
     Route::get('/projects/show/{id}', [ProjectsController::class, 'show'])->name('admin.projects.show');
     Route::delete('/projects/{id}', [ProjectsController::class, 'destroy'])->name('admin.projects.destroy');
+
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
 });

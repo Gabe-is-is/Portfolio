@@ -4,16 +4,15 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\Component;
 
-class component.contract-me extends Component
+class Skill extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    private Collection $skills;
+    public function __construct(Collection $skills)
     {
-        //
+        $this->skills = $skills;
     }
 
     /**
@@ -21,6 +20,6 @@ class component.contract-me extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.component.contract-me');
+        return view('components.skill', ['skills' => $this->skills] );
     }
 }

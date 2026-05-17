@@ -55,7 +55,7 @@
     display: block;
     width: 660px;
     max-width: 660px;
-    height: 397px;
+    height: fit-content;
     box-sizing: border-box;
 }
 
@@ -128,7 +128,11 @@
 }
 
 .projects-grid-first-border-image_1 {
-    max-height: 192px;
+    max-height: 400px;
+}
+
+.projects-grid-first-border-image_1 > img {
+    max-height: 400px;
 }
 
 .projects-grid-first-border-btns {
@@ -155,6 +159,7 @@
     tab-size: 4;
     font-size: 14px;
     border-radius: 0.5rem;
+    border: none;
 }
 
 .inline-flex1:first-child {
