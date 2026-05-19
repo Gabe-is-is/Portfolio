@@ -8,6 +8,7 @@
     <main>
         <h1>Habilidades - Editar</h1>
         <form class="mt-4">
+            @csrf
             <div class="form-row ml-3 mr-3">
                 <div class="col-md-12 mb-3">
                     <label for="name">Nome</label>

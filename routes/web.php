@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
 
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware(['auth'])->group(function () {
     // DashboardController
     Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
     // AboutController
@@ -59,5 +59,6 @@ Route::prefix('/admin')->group(function () {
     Route::get('/projects/show/{id}', [ProjectsController::class, 'show'])->name('admin.projects.show');
     Route::delete('/projects/{id}', [ProjectsController::class, 'destroy'])->name('admin.projects.destroy');
 
+    });
     Route::get('/login', [LoginController::class, 'login'])->name('login');
-});
+    Route::post('/login', [LoginController::class, 'auth'])->name('login');

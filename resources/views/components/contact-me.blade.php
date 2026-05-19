@@ -62,6 +62,7 @@
                         <div class="padding-contate-me">
                             <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
                             <form id="formContato" method="POST" action="{{ route('admin.contacts.create') }}">
+                                @csrf
                                 <div class="contate-me-grid-3">
                                     <div class="contate-me-nome-container">
                                         <label for="name">Nome</label>
